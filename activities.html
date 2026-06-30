@@ -3,62 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Activities | My Portfolio</title>
+  <title>Activities - My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="index.html">My Portfolio</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">Menu</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">About</a>
-      <a href="activities.html" class="active">Activities</a>
+  <header class="app-bar">
+    <nav class="nav">
+      <a href="index.html" class="logo">My Portfolio</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">About</a>
+        <a href="activities.html" class="active">Activities</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="page-title">
+    <section class="page-header">
       <h1>Activity List</h1>
-      <p>Here are some projects, experiences, and activities I have worked on.</p>
+      <p>A collection of my projects, learning experiences, and achievements.</p>
     </section>
 
-    <section class="activity-grid">
+    <section class="activity-list">
       <article class="activity-card">
-        <h2>Personal Website</h2>
+        <span class="chip">Project</span>
+        <h2>Personal Portfolio Website</h2>
         <p>
-          Created a responsive portfolio website using HTML, CSS, and JavaScript.
+          Designed and built a responsive portfolio website using HTML, CSS,
+          and JavaScript.
         </p>
-        <span class="tag">Web Development</span>
+        <p class="date">2026</p>
       </article>
 
       <article class="activity-card">
-        <h2>School Project</h2>
+        <span class="chip">Study</span>
+        <h2>JavaScript Practice</h2>
         <p>
-          Participated in a team project and helped design the presentation and UI.
+          Practiced DOM manipulation, events, functions, and interactive web
+          features.
         </p>
-        <span class="tag">Teamwork</span>
+        <p class="date">2026</p>
       </article>
 
       <article class="activity-card">
-        <h2>Coding Practice</h2>
+        <span class="chip">Design</span>
+        <h2>UI Design Exploration</h2>
         <p>
-          Practiced basic programming concepts and solved beginner-level problems.
+          Learned basic design principles such as spacing, color, typography,
+          and card-based layouts.
         </p>
-        <span class="tag">Programming</span>
+        <p class="date">2026</p>
       </article>
 
       <article class="activity-card">
-        <h2>Design Study</h2>
+        <span class="chip">Teamwork</span>
+        <h2>Group Presentation</h2>
         <p>
-          Studied modern UI layouts, color systems, spacing, and responsive design.
+          Collaborated with classmates to research, prepare slides, and present
+          a topic clearly.
         </p>
-        <span class="tag">Design</span>
+        <p class="date">2026</p>
       </article>
     </section>
   </main>
 
   <footer>
-    <p>(c) 2026 Your Name. All rights reserved.</p>
+    <p>© 2026 Your Name. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

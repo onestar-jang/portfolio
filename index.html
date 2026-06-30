@@ -7,61 +7,97 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="index.html">My Portfolio</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">Menu</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html" class="active">About</a>
-      <a href="activities.html">Activities</a>
+  <header class="app-bar">
+    <nav class="nav">
+      <a href="index.html" class="logo">My Portfolio</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="#ai-survey">AI Survey</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-text">
-        <p class="label">Hello, I am</p>
-        <h1>onestar</h1>
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Your Name</h1>
         <p class="subtitle">
-          I am a proud student of Chungnam National University.
+          A student, developer, and creative learner interested in web design,
+          programming, and building meaningful digital experiences.
         </p>
-        <a href="activities.html" class="btn">My career looking</a>
+
+        <div class="hero-actions">
+          <a href="activities.html" class="btn primary">View Activities</a>
+          <a href="#ai-survey" class="btn secondary">Ask AI Agent</a>
+        </div>
       </div>
 
       <div class="profile-card">
-        <div class="avatar">STAR</div>
-        <h2>onestar</h2>
-        <p>Web Learner - Designer - Creator - CNU student</p>
+        <div class="avatar">YN</div>
+        <h2>Your Name</h2>
+        <p>Web Developer</p>
       </div>
     </section>
 
     <section class="section">
-      <h2>Self Introduction</h2>
-      <div class="card">
-        <p>
-          Welcome to my portfolio website. I enjoy learning new technologies,
-          creating simple web projects, and improving my design skills.
-        </p>
-        <p>
-          My goal is to build useful and beautiful digital experiences while
-          continuing to grow as a developer.
-        </p>
+      <h2>About Me</h2>
+      <p>
+        I enjoy learning new technologies and creating clean, useful websites.
+        My interests include frontend development, UI design, problem solving,
+        and teamwork.
+      </p>
+    </section>
+
+    <section class="grid-section">
+      <div class="info-card">
+        <h3>Skills</h3>
+        <p>HTML, CSS, JavaScript, Responsive Design, Git</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Education</h3>
+        <p>Your school or university name</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Goal</h3>
+        <p>To become a skilled developer and create helpful digital products.</p>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>UI Design</span>
-        <span>Problem Solving</span>
+    <section class="ai-service-section" id="ai-survey">
+      <div class="ai-service-copy">
+        <p class="eyebrow">AI Survey Service</p>
+        <h2>Ask My AI Agent</h2>
+        <p>
+          Leave your question below. The AI agent will review your message and
+          send a response to your email address.
+        </p>
       </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="visitorName">Name</label>
+        <input type="text" id="visitorName" placeholder="&#51060;&#47492;" required>
+
+        <label for="visitorEmail">Email</label>
+        <input type="email" id="visitorEmail" placeholder="&#51060;&#47700;&#51068;" required>
+
+        <label for="visitorMessage">Question</label>
+        <textarea id="visitorMessage" placeholder="AI &#50640;&#51060;&#51204;&#53944;&#50640;&#44172; &#54624; &#51656;&#47928;&#51012; &#51077;&#47141;&#54616;&#49464;&#50836;" required></textarea>
+
+        <button type="submit">AI &#50640;&#51060;&#51204;&#53944;&#50640;&#44172; &#51656;&#47928;&#54616;&#44592;</button>
+        <div id="responseMessage" class="response-message" aria-live="polite"></div>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>(c) 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
