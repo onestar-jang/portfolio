@@ -19,13 +19,12 @@ if (contactForm && responseDiv) {
     const email = document.getElementById("visitorEmail").value.trim();
     const message = document.getElementById("visitorMessage").value.trim();
 
-    // 기본 메시지
     responseDiv.style.display = "block";
     responseDiv.style.color = "#2563eb";
     responseDiv.innerText = "메시지를 전송 중입니다... 잠시만 기다려주세요.";
 
-    // 👉 여기에 Make 웹훅 URL 넣기
-    const makeWebhookUrl = "https://hook.us1.make.com/여기에_진짜_웹훅_ID";
+    // 👉 Make webhook (email trigger 방식)
+    const makeWebhookUrl = "https://hook.us2.make.com/t7jos68r72old19bolatq9reqxh9j9kn";
 
     try {
       const response = await fetch(makeWebhookUrl, {
@@ -46,7 +45,7 @@ if (contactForm && responseDiv) {
       }
 
       responseDiv.style.color = "#15803d";
-      responseDiv.innerText = "메시지가 성공적으로 전송되었습니다! 곧 답변을 받게 됩니다.";
+      responseDiv.innerText = "메시지가 성공적으로 전송되었습니다! 빠르게 확인 후 답변드릴게요.";
 
       contactForm.reset();
 
